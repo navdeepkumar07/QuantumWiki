@@ -1,0 +1,84 @@
+/* Practical Significance Card */
+.practical-card {
+    background: rgba(56, 189, 248, 0.05);
+    /* Sky tint */
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.practical-card .card-icon {
+    color: #38bdf8;
+    /* Sky-400 */
+    min-width: 24px;
+    height: 24px;
+}
+
+.practical-card h4 {
+    color: #38bdf8;
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.practical-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Real-Life Application Card */
+.application-card {
+    background: rgba(16, 185, 129, 0.05);
+    /* Emerald tint */
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.application-card .card-icon {
+    color: #34d399;
+    /* Emerald-400 */
+    min-width: 24px;
+    height: 24px;
+}
+
+.application-card h4 {
+    color: #34d399;
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.application-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Re-style Fun Fact to use shared class structure for consistency if desired, 
+   but for now we just target the class names used in JS */
+.fun-fact-card .card-icon {
+    color: #f59e0b;
+    /* Amber-500 */
+    min-width: 24px;
+    height: 24px;
+}
+
+.fun-fact-card .card-content h4 {
+    color: #f59e0b;
+}
+
+.fun-fact-card .card-content p {
+    color: var(--text-secondary);
+}

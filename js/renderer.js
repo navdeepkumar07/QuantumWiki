@@ -100,15 +100,45 @@ const Renderer = {
         container.appendChild(div);
     },
 
+    renderPractical: (container, text) => {
+        if (!text) return;
+        const div = document.createElement('div');
+        div.className = 'practical-card';
+        div.innerHTML = `
+            <div class="card-icon"><i data-lucide="book-open"></i></div>
+            <div class="card-content">
+                <h4>Practical Significance</h4>
+                <p>${text}</p>
+            </div>
+        `;
+        container.appendChild(div);
+        lucide.createIcons({ root: div });
+    },
+
+    renderApplication: (container, text) => {
+        if (!text) return;
+        const div = document.createElement('div');
+        div.className = 'application-card';
+        div.innerHTML = `
+            <div class="card-icon"><i data-lucide="cog"></i></div>
+            <div class="card-content">
+                <h4>Real-Life Application</h4>
+                <p>${text}</p>
+            </div>
+        `;
+        container.appendChild(div);
+        lucide.createIcons({ root: div });
+    },
+
     renderFunFact: (container, factText) => {
         if (!factText) return;
         const div = document.createElement('div');
         div.className = 'fun-fact-card';
         div.innerHTML = `
-            <i data-lucide="lightbulb" class="fun-fact-icon"></i>
-            <div class="fun-fact-content">
+            <div class="card-icon"><i data-lucide="lightbulb"></i></div>
+            <div class="card-content">
                 <h4>Did You Know?</h4>
-                <p class="fun-fact-text">${factText}</p>
+                <p>${factText}</p>
             </div>
         `;
         container.appendChild(div);
@@ -150,6 +180,12 @@ const Renderer = {
         }
         if (data.scientist) {
             Renderer.renderScientist(leftCol, data.scientist);
+        }
+        if (data.practical) {
+            Renderer.renderPractical(leftCol, data.practical);
+        }
+        if (data.application) {
+            Renderer.renderApplication(leftCol, data.application);
         }
         if (data.funFact) {
             Renderer.renderFunFact(leftCol, data.funFact);

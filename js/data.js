@@ -40,6 +40,8 @@ const DATA = {
                 name: 'Albert Einstein',
                 bio: 'A German-born theoretical physicist who developed the theory of relativity. He is best known for his mass–energy equivalence formula E = mc².'
             },
+            practical: 'This equivalence means that mass can be converted into energy and vice versa. It implies that even a small amount of mass contains a tremendous amount of energy.',
+            application: 'Nuclear Power Plants generate electricity by converting a tiny amount of mass into huge energy via fission. It also explains the energy source of the Sun (fusion) and is critical for PET scans in medicine.',
             mainEquation: {
                 latex: 'E = mc^2',
                 symbols: [
@@ -84,6 +86,8 @@ const DATA = {
                 name: 'Albert Einstein',
                 bio: 'While famous for relativity, his work on the photoelectric effect was pivotal in establishing quantum theory.'
             },
+            practical: 'It demonstrates that light has particle-like properties (photons). The energy of electrons depends on the frequency of light, not intensity, defying classical wave theory.',
+            application: 'Solar Panels (Photovoltaics) use this effect to convert sunlight into electricity. It is also used in light sensors for automatic doors, digital cameras (CCD/CMOS sensors), and night vision goggles.',
             mainEquation: {
                 latex: 'K_{max} = hf - \\Phi',
                 symbols: [
@@ -125,6 +129,8 @@ const DATA = {
                 name: 'Arthur Compton',
                 bio: 'An American physicist who won the Nobel Prize in Physics in 1927 for his discovery of the Compton effect.'
             },
+            practical: 'It proves that photons carry momentum, just like billiard balls. When a photon hits an electron, it loses energy and changes color (wavelength increases), confirming the particle nature of light.',
+            application: 'Compton Scattering is used in Radiation Therapy to treat cancer. It is also fundamental in Astro-physics for detecting gamma rays and in airport security scanners (Backscatter X-rays).',
             mainEquation: {
                 latex: '\\lambda\' - \\lambda = \\frac{h}{m_e c}(1 - \\cos\\theta)',
                 symbols: [
@@ -168,6 +174,8 @@ const DATA = {
                 name: 'Marie Curie',
                 bio: 'A Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity.'
             },
+            practical: 'The statistical nature of decay allows us to predict how long a radioactive material will last or how old an object is based on the remaining isotopes.',
+            application: 'Carbon Dating uses this law to determine the age of ancient artifacts. It is also used in medical diagnostics (radioactive tracers), smoke detectors (Americium-241), and sterilizing medical equipment.',
             mainEquation: {
                 latex: 'N(t) = N_0 e^{-\\lambda t}',
                 symbols: [
@@ -213,6 +221,8 @@ const DATA = {
                 name: 'Erwin Schrödinger',
                 bio: 'An Austrian physicist who developed a number of fundamental results in quantum theory, forming the basis of wave mechanics.'
             },
+            practical: 'It is the "F = ma" of quantum mechanics. It predicts how quantum systems (electrons, atoms) evolve over time and describes the probability of finding a particle in a specific location.',
+            application: 'It is the foundation of Modern Electronics (Transistors, Microchips), Lasers, and Quantum Computing. It is also used in MRI machines and Electron Microscopes.',
             mainEquation: {
                 latex: 'i\\hbar \\frac{\\partial}{\\partial t}\\Psi(r,t) = \\hat{H}\\Psi(r,t)',
                 symbols: [
@@ -255,6 +265,8 @@ const DATA = {
                 name: 'Werner Heisenberg',
                 bio: 'A German theoretical physicist and one of the key pioneers of quantum mechanics.'
             },
+            practical: 'It imposes a hard limit on what we can know. You cannot know both the exact position and exact speed of a particle at the same time. The more precisely you know one, the less you know the other.',
+            application: 'It explains why atoms don’t collapse (electrons don’t spiral into the nucleus). It is also crucial for Quantum Cryptography, ensuring secure communication that cannot be eavesdropped without detection.',
             mainEquation: {
                 latex: '\\sigma_x \\sigma_p \\geq \\frac{\\hbar}{2}',
                 symbols: [
@@ -291,6 +303,8 @@ const DATA = {
                 name: 'Louis de Broglie',
                 bio: 'A French physicist who made groundbreaking contributions to quantum theory. In his 1924 PhD thesis, he postulated the wave nature of electrons.'
             },
+            practical: 'It bridges the gap between matter and waves. Heavy, fast objects have tiny wavelengths (undetectable), but tiny particles like electrons have significant wavelengths, allowing them to diffract and interfere.',
+            application: 'Electron Microscopes use the wave nature of electrons to see objects millions of times smaller than light microscopes can (resolution is limited by wavelength, and electrons have much shorter wavelengths than light).',
             mainEquation: {
                 latex: '\\lambda = \\frac{h}{p}',
                 symbols: [
@@ -327,6 +341,8 @@ const DATA = {
                 name: 'Max Planck',
                 bio: 'A German theoretical physicist whose discovery of energy quanta won him the Nobel Prize in Physics in 1918.'
             },
+            practical: 'It solved the "Ultraviolet Catastrophe" by proposing energy is quantized. It explains the color of hot objects (why a heated iron turns red, then yellow, then white).',
+            application: 'Thermal Imaging Cameras use this principle to see heat signatures (night vision). It also helps astronomers calculate the temperature of stars based on their color (stellar spectra).',
             mainEquation: {
                 latex: 'B_\\nu(T) = \\frac{2h\\nu^3}{c^2} \\frac{1}{e^{h\\nu/k_BT} - 1}',
                 symbols: [
@@ -368,6 +384,8 @@ const DATA = {
                 name: 'Niels Bohr',
                 bio: 'A Danish physicist who made foundational contributions to understanding atomic structure and quantum theory.'
             },
+            practical: 'It introduced the idea of discrete energy levels (shells). Electrons can only exist in specific orbits, and jumping between them emits/absorbs distinct colors of light.',
+            application: 'It explains the Emission Spectra of elements (Neon lights, Fireworks colors). It is also the basis for Lasers, where electrons are stimulated to jump levels and emit coherent light.',
             mainEquation: {
                 latex: 'E_n = -\\frac{13.6 \\text{ eV}}{n^2}',
                 symbols: [
